@@ -24,8 +24,6 @@
                         <asp:BoundField HeaderText="Team 2 Description" DataField="Team2Description" SortExpression="Team2Description" />
                         <asp:BoundField HeaderText="Team 2 Points Scored" DataField="Team2PointScored" SortExpression="Team2PointsScored" />
                         <asp:BoundField HeaderText="Team 2 Points Loss" DataField="Team2PointLoss" SortExpression="Team2PointLoss" />
-
-
                     </Columns>
                 </asp:GridView>
             </div>
