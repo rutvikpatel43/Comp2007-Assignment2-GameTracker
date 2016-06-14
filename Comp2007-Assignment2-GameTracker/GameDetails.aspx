@@ -3,11 +3,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <br />
-                <br />
-                <h1>Game List</h1>
-                <div class="col-md-10">
+            <div class="col-md-12">
+               <h1>Game List</h1>
+                <div class="col-md-12">
                 <a href="Details.aspx" class="btn btn-success btn-lg"><i class="fa fa-plus"></i>Add Game</a>
                 </div>
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-responsive"

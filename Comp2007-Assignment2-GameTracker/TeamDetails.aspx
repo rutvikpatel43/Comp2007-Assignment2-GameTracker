@@ -3,22 +3,26 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <br />
-                <br />
+            <div class="col-md-10">
                 <h1>Team Detail</h1>
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <a href="GameDetails.aspx" class="btn btn-success btn-lg"><i class="fa fa-plus"></i>Back</a>
+                    <br />
                 </div>
-                <asp:Label runat="server" Text="Team Name :">Team Name:</asp:Label>
-                <asp:Label runat="server" ID="TeamName"></asp:Label>
-                <br />
-                <asp:Label runat="server" Text="Team Desciption:">Team Description:</asp:Label>
-                <asp:TextBox runat="server" TextMode="MultiLine" Columns="3" Rows="3" CssClass="form-control" ID="TeamDescriptionText" placeholder="Game Description" required="true"></asp:TextBox>
-
-                <br />
-                <asp:Label runat="server" Text="Team Point :">Team Points Scored:</asp:Label>
-                <asp:Label runat="server" ID="TeamPoints"></asp:Label>
+                <div class="col-md-5">
+                        <asp:Label runat="server" Text="Team Name :">Team Name:</asp:Label>
+                    <asp:Label runat="server" ID="TeamName"></asp:Label>
+                    <br />
+                    <br />
+                        <asp:Label runat="server" Text="Team Point :">Team Points Scored:</asp:Label>
+                    <asp:Label runat="server" ID="TeamPoints"></asp:Label>
+                    </div>
+                <div class="col-md-5">
+                    <asp:Label runat="server" Text="Team Desciption:">Team Description:</asp:Label>
+                    <asp:TextBox runat="server" TextMode="MultiLine" Columns="3" Rows="3" CssClass="form-control" ID="TeamDescriptionText" placeholder="Game Description" required="true"></asp:TextBox>
+                    <br />
+                    
+                </div>
             </div>
         </div>
     </div>
