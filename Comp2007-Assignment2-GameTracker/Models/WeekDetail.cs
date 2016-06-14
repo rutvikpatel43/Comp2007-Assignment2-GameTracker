@@ -11,7 +11,7 @@ namespace Comp2007_Assignment2_GameTracker.Models
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class WeekDetail
     {
         public int Id { get; set; }

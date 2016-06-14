@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Study\Semester 4\COMP 2007\Assignment\Assignment-2\Comp2007_Assignment2_GameTracker-master\Comp2007_Assignment2_GameTracker-master\Comp2007_Assignment2_GameTracker\Models\Model.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\Study\Semester 4\COMP 2007\Practice Labs\comp2007-w4-lab-3\Comp2007-Assignment2-GameTracker\Comp2007-Assignment2-GameTracker\Models\Model.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

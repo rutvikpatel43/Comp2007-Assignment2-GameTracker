@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Comp2007_Assignment2_GameTracker
-{
-
-
-    public partial class Default
-    {
-
+namespace Comp2007_Assignment2_GameTracker {
+    
+    
+    public partial class Default {
+        
         /// <summary>
         /// Jumbotron control.
         /// </summary>

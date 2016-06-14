@@ -44,22 +44,6 @@ a {
 	transition: all ease 0.25s;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus {
-	outline: inherit;
-	color: inherit;
-}
-
-strong {
-	font-weight: 700;
-}
-
-.strong {
-	font-weight: 800;
-}
 
 
 /*---------------------------------------
@@ -132,7 +116,7 @@ li {
 -----------------------------------------*/
 h1{
 	font-family: 'Raleway', sans-serif;
-	color: #ffffff;
+	color: goldenrod;
 	margin-bottom: 0;
 	margin-top: 0;
 }
