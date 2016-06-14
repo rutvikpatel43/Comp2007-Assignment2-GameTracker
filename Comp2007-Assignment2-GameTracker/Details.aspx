@@ -7,7 +7,7 @@
                 <h1>Week Details</h1>
                 <h5>All Fields are Required</h5>
                 <br />
-                <div class="Game details">
+                <div class="Game-details">
                     <div class="form-group" id="201">
                         <label class="control-label" for="GameDateTextBox">Game Date:</label>
                         <asp:TextBox runat="server" TextMode="Date" CssClass="form-control" ID="GameDateTextBox" placeholder="Enrollment Date Format: mm/dd/yyyy" required="true"></asp:TextBox>
@@ -33,11 +33,12 @@
                     </div>
                 </div>
             </div>
-            <div class="Team Details">
-                <div class="col-md-offset-2 col-md-4">
-                    <h3>Team 1 Details</h3>
-                    <h5>All Fiellds are Required</h5>
-                    <br />
+
+            <div class="col-md-offset-2 col-md-4">
+                <h3>Team 1 Details</h3>
+                <h5>All Fiellds are Required</h5>
+                <br />
+                <div class="Game-details">
                     <div class="from-group">
                         <label for="Team1NameTextBox" class="control-label">Team 1 Name:</label>
                         <asp:TextBox runat="server" CssClass="form-control" ID="Team1NameTextbox" placeholder="Team 1 Name" required="true"></asp:TextBox>
@@ -56,11 +57,12 @@
                     </div>
                 </div>
             </div>
-            <div class="Team Details">
-                <div class="col-md-offset-1 col-md-4">
-                    <h3>Team 2 Details</h3>
-                    <h5>All Fiellds are Required</h5>
-                    <br />
+
+            <div class="col-md-offset-1 col-md-4">
+                <h3>Team 2 Details</h3>
+                <h5>All Fiellds are Required</h5>
+                <br />
+                <div class="Game-details">
                     <div class="from-group">
                         <label for="Team2NameTextBox" class="control-label">Team 2 Name:</label>
                         <asp:TextBox runat="server" CssClass="form-control" ID="Team2NameTextBox" placeholder="Team 1 Name" required="true"></asp:TextBox>
@@ -77,13 +79,14 @@
                         <label class="control-label" for="Team2TotalPointLostTextbox">Total Points Loss: </label>
                         <asp:TextBox TextMode="Number" runat="server" CssClass="form-control" ID="Team2TotalPointsLostTextBox" placeholder="Point Loss by team 1" required="true"></asp:TextBox>
                     </div>
-                    <div class="text-right">
+                    
+                </div>
+                <div class="text-right">
                         <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server"
                             UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
                         <asp:Button Text="Save" ID="SaveButton" CssClass="btn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click" />
                     </div>
-                </div>
-            </div>
+        </div>
         </div>
     </div>
 </asp:Content>

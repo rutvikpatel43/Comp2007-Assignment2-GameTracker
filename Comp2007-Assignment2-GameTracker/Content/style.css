@@ -32,8 +32,18 @@ body {
 	background-size: cover;
 
 }
-
-
+div{
+   
+}
+.Game-details{
+    color:#752099;
+    padding:18px;
+    border-spacing:30px;
+    border-style:groove;
+    border-radius:20px;
+    border-color:#F9BF3B;
+    background-color:lightgray;
+}
 /*---------------------------------------
    Anchor Link and Bold Text           
 -----------------------------------------*/
