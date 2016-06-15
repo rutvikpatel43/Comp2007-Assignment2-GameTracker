@@ -35,7 +35,7 @@
             </div>
 
             <div class="col-md-offset-2 col-md-4">
-                <h3>Team 1 Details</h3>
+                <h1>Team 1 Details</h1>
                 <h5>All Fiellds are Required</h5>
                 <br />
                 <div class="Game-details">
@@ -59,7 +59,7 @@
             </div>
 
             <div class="col-md-offset-1 col-md-4">
-                <h3>Team 2 Details</h3>
+                <h1>Team 2 Details</h1>
                 <h5>All Fiellds are Required</h5>
                 <br />
                 <div class="Game-details">
