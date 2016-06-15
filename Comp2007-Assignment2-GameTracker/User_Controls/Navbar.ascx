@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
       <a href="./" class="navbar-brand">
-          <img src="../Assets/500_F_96256473_w4jPsMHByd9a0APtnEEN8aB5jgbPu6Gg.jpg"/></a>
+          <img src="../Assets/Logo.png" /></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">

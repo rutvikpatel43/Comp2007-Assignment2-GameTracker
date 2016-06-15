@@ -36,11 +36,9 @@ namespace Comp2007_Assignment2_GameTracker
                     Team1NameTextbox.Text = WeekDetails.Team1Name;
                     Team1DescriptionTextBox.Text = WeekDetails.Team1Description;
                     Team1TotalPointScoredTextBox.Text = WeekDetails.Team1PointScored.ToString();
-                    Team1TotalPointLostTextBox.Text = WeekDetails.Team1PointLoss.ToString();
                     Team2NameTextBox.Text = WeekDetails.Team2Name;
                     Team2DescriptionTextBox.Text = WeekDetails.Team2Description;
                     Team2TotalPointScoredTextBox.Text = WeekDetails.Team2PointScored.ToString();
-                    Team2TotalPointsLostTextBox.Text = WeekDetails.Team2PointLoss.ToString();
                 }
 
             }
@@ -72,11 +70,11 @@ namespace Comp2007_Assignment2_GameTracker
                 details.Team1Name = Team1NameTextbox.Text;
                 details.Team1Description = Team1DescriptionTextBox.Text;
                 details.Team1PointScored = Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
-                details.Team1PointLoss = Convert.ToInt32(Team1TotalPointLostTextBox.Text);
+                details.Team1PointLoss = Convert.ToInt32(TotalPointsTextBox.Text) - Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
                 details.Team2Name = Team2NameTextBox.Text;
                 details.Team2Description = Team1DescriptionTextBox.Text;
                 details.Team2PointScored = Convert.ToInt32(Team2TotalPointScoredTextBox.Text);
-                details.Team2PointLoss = Convert.ToInt32(Team2TotalPointsLostTextBox.Text);
+                details.Team2PointLoss = Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
                 if (weekDetails == 0)
                 {
                     db.WeekDetails.Add(details);
@@ -85,6 +83,11 @@ namespace Comp2007_Assignment2_GameTracker
 
                 Response.Redirect("~/GameDetails.aspx");
             }
+        }
+
+        protected void Team1TotalPointScoredTextBox_TextChanged(object sender, EventArgs e)
+        {
+            Team2TotalPointScoredTextBox.Text = Convert.ToString((Convert.ToInt32(TotalPointsTextBox.Text) - Convert.ToInt32(Team1TotalPointScoredTextBox.Text)));
         }
     }
 }

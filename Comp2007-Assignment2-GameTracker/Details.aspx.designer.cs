@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Comp2007_Assignment2_GameTracker
-{
-
-
-    public partial class Details
-    {
-
+namespace Comp2007_Assignment2_GameTracker {
+    
+    
+    public partial class Details {
+        
         /// <summary>
         /// GameDateTextBox control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox GameDateTextBox;
-
+        
         /// <summary>
         /// RangeValidator1 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1;
-
+        
         /// <summary>
         /// GameNameTextBox control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox GameNameTextBox;
-
+        
         /// <summary>
         /// GameDescriptionTextBox control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox GameDescriptionTextBox;
-
+        
         /// <summary>
         /// TotalPointsTextBox control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TotalPointsTextBox;
-
+        
         /// <summary>
         /// SpectatorsTextBox control.
         /// </summary>
@@ -67,7 +65,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SpectatorsTextBox;
-
+        
         /// <summary>
         /// Team1NameTextbox control.
         /// </summary>
@@ -76,7 +74,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Team1NameTextbox;
-
+        
         /// <summary>
         /// Team1DescriptionTextBox control.
         /// </summary>
@@ -85,7 +83,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Team1DescriptionTextBox;
-
+        
         /// <summary>
         /// Team1TotalPointScoredTextBox control.
         /// </summary>
@@ -94,16 +92,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Team1TotalPointScoredTextBox;
-
-        /// <summary>
-        /// Team1TotalPointLostTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Team1TotalPointLostTextBox;
-
+        
         /// <summary>
         /// Team2NameTextBox control.
         /// </summary>
@@ -112,7 +101,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Team2NameTextBox;
-
+        
         /// <summary>
         /// Team2DescriptionTextBox control.
         /// </summary>
@@ -121,7 +110,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Team2DescriptionTextBox;
-
+        
         /// <summary>
         /// Team2TotalPointScoredTextBox control.
         /// </summary>
@@ -130,16 +119,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Team2TotalPointScoredTextBox;
-
-        /// <summary>
-        /// Team2TotalPointsLostTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Team2TotalPointsLostTextBox;
-
+        
         /// <summary>
         /// CancelButton control.
         /// </summary>
@@ -148,7 +128,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button CancelButton;
-
+        
         /// <summary>
         /// SaveButton control.
         /// </summary>

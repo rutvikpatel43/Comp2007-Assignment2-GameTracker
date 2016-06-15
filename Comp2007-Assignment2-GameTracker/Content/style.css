@@ -655,8 +655,8 @@ object {
    Footer             
 ------------------------------------------*/
 footer {
-	padding-top: 75px;
-	padding-bottom: 75px;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
 .copyright {
@@ -684,6 +684,7 @@ footer {
    Footer             
 ------------------------------------------*/
 footer {
+    margin-top:10%;
 	padding-top: 75px;
 	padding-bottom: 75px;
 }
@@ -710,6 +711,7 @@ footer {
 
 
 footer{
+    margin-top:10%;
 	position: fixed;
 	bottom: 0;
     margin-bottom: 0;
@@ -731,7 +733,7 @@ footer{
 	font: bold 16px sans-serif;
 
 	padding: 55px 50px;
-	margin-top: 10%;
+	margin-top: 15%;
 }
 
 .footer-distributed .footer-left,

@@ -6,7 +6,7 @@
             <div class="col-md-10">
                 <h1>Team Detail</h1>
                 <div class="col-md-12">
-                    <a href="GameDetails.aspx" class="btn btn-success btn-lg"><i class="fa fa-plus"></i>Back</a>
+                    <a href="GameDetails.aspx"><i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true"></i></a>
                     <br />
                 </div>
                 <div class="col-md-5">

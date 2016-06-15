@@ -6,7 +6,7 @@
             <div class="col-md-12">
                <h1>Game List</h1>
                 <div class="col-md-12">
-                <a href="Details.aspx" class="btn btn-success btn-lg"><i class="fa fa-plus"></i>Add Game</a>
+                <a href="Details.aspx"><i class="fa fa-plus-circle fa-3x"></i>Add Game</a>
                 </div>
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-responsive"
                     ID="GameDetailsGridView" AutoGenerateColumns="false" DataKeyNames="Id" OnRowDeleting="GameDetailsGridView_RowDeleting"
