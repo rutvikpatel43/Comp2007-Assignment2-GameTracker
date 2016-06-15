@@ -13,12 +13,12 @@ namespace Comp2007_Assignment2_GameTracker {
     public partial class Default {
         
         /// <summary>
-        /// Jumbotron control.
+        /// JumboGameDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Comp2007_Assignment2_GameTracker.User_Controls.Jumbotron Jumbotron;
+        protected global::System.Web.UI.WebControls.Repeater JumboGameDetails;
     }
 }

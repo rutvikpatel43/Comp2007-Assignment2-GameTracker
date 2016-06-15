@@ -32,8 +32,16 @@ body {
 	background-size: cover;
 
 }
-div{
-   
+div.HomePageGameDetails {
+    margin-left:7%;
+    margin-right:5%;
+    margin-bottom:3%;
+    border-spacing:100px;
+    padding:18px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border-spacing: 30px;
+    border-style: groove;
 }
 .Game-details{
     color:#752099;
