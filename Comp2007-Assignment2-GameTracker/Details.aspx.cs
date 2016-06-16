@@ -12,6 +12,13 @@ namespace Comp2007_Assignment2_GameTracker
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+               
+            if (IsPostBack)
+            {
+                GameDateTextBox.Focus();
+                CheckLabel.Visible = true;
+                Team2NameTextBox.Focus();
+            }
             if (!IsPostBack && Request.QueryString.Count > 0)
             {
                 this.Get_WeekDeatils();
@@ -28,7 +35,7 @@ namespace Comp2007_Assignment2_GameTracker
                                           select allDetails).FirstOrDefault();
                 if (WeekDetails != null)
                 {
-                    GameDateTextBox.Text = WeekDetails.GameDate.ToString();
+                    GameDateTextBox.Text = WeekDetails.GameDate.ToString("yyyy-MM-dd");
                     GameNameTextBox.Text = WeekDetails.GameName;
                     GameDescriptionTextBox.Text = WeekDetails.GameDescription;
                     TotalPointsTextBox.Text = WeekDetails.TotalPoints.ToString();
@@ -48,41 +55,66 @@ namespace Comp2007_Assignment2_GameTracker
         {
             Response.Redirect("~/GameDetails.aspx");
         }
-
-        protected void SaveButton_Click(object sender, EventArgs e)
+        protected bool CheckNew()
         {
+            DateTime dt = Convert.ToDateTime(GameDateTextBox.Text);
             using (DefaultConnection1 db = new DefaultConnection1())
             {
-                WeekDetail details = new WeekDetail();
-                int weekDetails = 0;
-                if (Request.QueryString.Count > 0)
-                {
-                    weekDetails = Convert.ToInt32(Request.QueryString["Id"]);
-                    details = (from alldetails in db.WeekDetails
-                               where alldetails.Id == weekDetails
+                WeekDetail details = (from alldetails in db.WeekDetails
+                               where alldetails.GameDate == dt
+                               && alldetails.GameName == GameNameTextBox.Text
+                               && alldetails.Team1Name == Team1NameTextbox.Text
+                               && alldetails.Team2Name == Team2NameTextBox.Text
                                select alldetails).FirstOrDefault();
-                }
-                details.GameDate = Convert.ToDateTime(GameDateTextBox.Text);
-                details.GameName = GameNameTextBox.Text;
-                details.GameDescription = GameDescriptionTextBox.Text;
-                details.TotalPoints = Convert.ToInt32(TotalPointsTextBox.Text);
-                details.TotalSpectators = Convert.ToInt32(SpectatorsTextBox.Text);
-                details.Team1Name = Team1NameTextbox.Text;
-                details.Team1Description = Team1DescriptionTextBox.Text;
-                details.Team1PointScored = Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
-                details.Team1PointLoss = Convert.ToInt32(TotalPointsTextBox.Text) - Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
-                details.Team2Name = Team2NameTextBox.Text;
-                details.Team2Description = Team1DescriptionTextBox.Text;
-                details.Team2PointScored = Convert.ToInt32(Team2TotalPointScoredTextBox.Text);
-                details.Team2PointLoss = Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
-                if (weekDetails == 0)
+                if (details != null)
                 {
-                    db.WeekDetails.Add(details);
+                   
+                    CheckLabel.Visible = true;
+                    CheckLabel.Text = "Record Already Exist";
+                    return true;
                 }
-                db.SaveChanges();
-
-                Response.Redirect("~/GameDetails.aspx");
+                else
+                    return false;
             }
+        }
+        protected void SaveButton_Click(object sender, EventArgs e)
+        {
+            if (!CheckNew())
+            {
+                using (DefaultConnection1 db = new DefaultConnection1())
+                {
+                    WeekDetail details = new WeekDetail();
+                    int weekDetails = 0;
+                    if (Request.QueryString.Count > 0)
+                    {
+                        weekDetails = Convert.ToInt32(Request.QueryString["Id"]);
+                        details = (from alldetails in db.WeekDetails
+                                   where alldetails.Id == weekDetails
+                                   select alldetails).FirstOrDefault();
+                    }
+                    details.GameDate = Convert.ToDateTime(GameDateTextBox.Text);
+                    details.GameName = GameNameTextBox.Text;
+                    details.GameDescription = GameDescriptionTextBox.Text;
+                    details.TotalPoints = Convert.ToInt32(TotalPointsTextBox.Text);
+                    details.TotalSpectators = Convert.ToInt32(SpectatorsTextBox.Text);
+                    details.Team1Name = Team1NameTextbox.Text;
+                    details.Team1Description = Team1DescriptionTextBox.Text;
+                    details.Team1PointScored = Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
+                    details.Team1PointLoss = Convert.ToInt32(TotalPointsTextBox.Text) - Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
+                    details.Team2Name = Team2NameTextBox.Text;
+                    details.Team2Description = Team1DescriptionTextBox.Text;
+                    details.Team2PointScored = Convert.ToInt32(Team2TotalPointScoredTextBox.Text);
+                    details.Team2PointLoss = Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
+                    if (weekDetails == 0)
+                    {
+                        db.WeekDetails.Add(details);
+                    }
+                    db.SaveChanges();
+
+                    Response.Redirect("~/GameDetails.aspx");
+                }
+            }
+
         }
 
         protected void Team1TotalPointScoredTextBox_TextChanged(object sender, EventArgs e)

@@ -4,6 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-offset-4 col-md-4">
+                <asp:Label ID="CheckLabel" runat="server" CssClass="alert alert-danger btn-danger btn-lg" Visible="false" Width="100%"></asp:Label>
                 <h1>Week Details</h1>
                 <h5>All Fields are Required</h5>
                 <br />
