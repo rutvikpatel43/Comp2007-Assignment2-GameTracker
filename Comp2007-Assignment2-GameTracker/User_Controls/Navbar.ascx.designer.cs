@@ -7,22 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Comp2007_Assignment2_GameTracker
-{
-
-
-    public partial class Navbar
-    {
-
+namespace Comp2007_Assignment2_GameTracker {
+    
+    
+    public partial class Navbar {
+        
         /// <summary>
-        /// home control.
+        /// Home control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
-
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Home;
+        
         /// <summary>
         /// Details control.
         /// </summary>
@@ -31,7 +29,16 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Details;
-
+        
+        /// <summary>
+        /// GameDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl GameDetails;
+        
         /// <summary>
         /// contact control.
         /// </summary>
@@ -40,7 +47,7 @@ namespace Comp2007_Assignment2_GameTracker
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl contact;
-
+        
         /// <summary>
         /// Image1 control.
         /// </summary>

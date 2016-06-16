@@ -138,7 +138,6 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="TeamDetails.aspx" />
     <Content Include="User_Controls\Footer.ascx" />
-    <Content Include="User_Controls\Jumbotron.ascx" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -213,13 +212,6 @@
     </Compile>
     <Compile Include="User_Controls\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="User_Controls\Jumbotron.ascx.cs">
-      <DependentUpon>Jumbotron.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="User_Controls\Jumbotron.ascx.designer.cs">
-      <DependentUpon>Jumbotron.ascx</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>

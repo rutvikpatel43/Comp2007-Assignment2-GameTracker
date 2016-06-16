@@ -1,4 +1,10 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Footer.ascx.cs" Inherits="Comp2007_Assignment2_GameTracker.User_Controls.Footer" %>
+<%--
+        Team : Rutvik(#200305366),Himanshu(#200306422)
+        File Name: Footer.ascx
+        Description:Footer for website.
+        Website:http://comp2007-assignment2-gametracker.azurewebsites.net
+--%>
  <footer class="footer footer-distributed">
             <div class="footer-left">
 
@@ -42,4 +48,4 @@
                 </div>
             </div>
         </footer>
-        <!-  end footer -->
+<!-  end footer -->

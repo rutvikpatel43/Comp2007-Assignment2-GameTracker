@@ -6,8 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @author: Tom Tsiliopoulos
- * @date: May 26, 2016
+ * @author: Rutvik(#200305366),Himanshu(#200306422)
+ * @date: Jun 15, 2016
  * @version: 0.0.1 - added the SetActivePage method
  */
 
@@ -17,6 +17,7 @@ namespace Comp2007_Assignment2_GameTracker
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // call the function to set active page
             SetActivePage();
         }
 
@@ -32,10 +33,16 @@ namespace Comp2007_Assignment2_GameTracker
             switch (Page.Title)
             {
                 case "Home Page":
-                    home.Attributes.Add("class", "link-active");
+                    Home.Attributes.Add("class", "link-active");
                     break;
                 case "Contact":
                     contact.Attributes.Add("class", "link-active");
+                    break;
+                case "Dashboard":
+                    GameDetails.Attributes.Add("class", "link-active");
+                    break;
+                case "Week Details":
+                    Details.Attributes.Add("class", "link-active");
                     break;
             }
         }

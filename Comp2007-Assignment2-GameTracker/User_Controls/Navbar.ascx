@@ -1,4 +1,10 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="Comp2007_Assignment2_GameTracker.Navbar" %>
+<%--
+        Team : Rutvik(#200305366),Himanshu(#200306422)
+        File Name: Navbar.ascx
+        Description: Navbar for wesite
+        Website:http://comp2007-assignment2-gametracker.azurewebsites.net
+--%>
 <nav class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -13,8 +19,9 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li id="Details" runat="server"><a href="Details.aspx"><i class="fa fa-phone fa-lg"></i> Add Details</a></li>
+                <li id="Home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                <li id="Details" runat="server"><a href="Details.aspx"><i class="fa fa-wpforms fa-lg"></i> Add Game</a></li>
+               <li id="GameDetails" runat="server"><a href="GameDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Games</a></li>
                 <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
             </ul>
         </div>

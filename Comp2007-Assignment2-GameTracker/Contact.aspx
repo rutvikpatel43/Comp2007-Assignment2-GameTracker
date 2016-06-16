@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Comp2007_Assignment2_GameTracker.Contact" %>
-
+<%--
+        Team : Rutvik(#200305366),Himanshu(#200306422)
+        File Name: Contact.ascx
+        Description: Contact form page and some info about us.
+        Website:http://comp2007-assignment2-gametracker.azurewebsites.net
+--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">

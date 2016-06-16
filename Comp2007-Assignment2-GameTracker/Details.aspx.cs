@@ -79,9 +79,7 @@ namespace Comp2007_Assignment2_GameTracker
         }
         protected void SaveButton_Click(object sender, EventArgs e)
         {
-            if (!CheckNew())
-            {
-                using (DefaultConnection1 db = new DefaultConnection1())
+              using (DefaultConnection1 db = new DefaultConnection1())
                 {
                     WeekDetail details = new WeekDetail();
                     int weekDetails = 0;
@@ -102,10 +100,10 @@ namespace Comp2007_Assignment2_GameTracker
                     details.Team1PointScored = Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
                     details.Team1PointLoss = Convert.ToInt32(TotalPointsTextBox.Text) - Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
                     details.Team2Name = Team2NameTextBox.Text;
-                    details.Team2Description = Team1DescriptionTextBox.Text;
+                    details.Team2Description = Team2DescriptionTextBox.Text;
                     details.Team2PointScored = Convert.ToInt32(Team2TotalPointScoredTextBox.Text);
                     details.Team2PointLoss = Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
-                    if (weekDetails == 0)
+                    if (weekDetails == 0 && !CheckNew())
                     {
                         db.WeekDetails.Add(details);
                     }
@@ -113,7 +111,7 @@ namespace Comp2007_Assignment2_GameTracker
 
                     Response.Redirect("~/GameDetails.aspx");
                 }
-            }
+            
 
         }
 
