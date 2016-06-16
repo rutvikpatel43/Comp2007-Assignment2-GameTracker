@@ -8,33 +8,49 @@ using System.Web.UI.WebControls;
 using Comp2007_Assignment2_GameTracker.Models;
 namespace Comp2007_Assignment2_GameTracker
 {
+    /**
+* @author: Rutvik(#200305366),Himanshu(#200306422)
+* @date: Jun 15, 2016
+* @version: 0.0.1 - added all the functions
+*/
     public partial class Details : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-               
+             // check for postback  
             if (IsPostBack)
             {
+                // if it is postback we need that for displaying the alert message for record duplication
                 GameDateTextBox.Focus();
                 CheckLabel.Visible = true;
                 Team2NameTextBox.Focus();
             }
             if (!IsPostBack && Request.QueryString.Count > 0)
             {
+                // if there is any query string gets the information
                 this.Get_WeekDeatils();
             }
         }
+
+        /**
+         * This method gets the data
+         *  
+         * @method Get_weekDeatils
+         * @return {void}
+         */
         protected void Get_WeekDeatils()
         {
             int WeekDetailID = Convert.ToInt32(Request.QueryString["Id"]);
             using (DefaultConnection1 db = new DefaultConnection1())
             {
-
+                // gets inform from the database
                 WeekDetail WeekDetails = (from allDetails in db.WeekDetails
                                           where allDetails.Id == WeekDetailID
                                           select allDetails).FirstOrDefault();
+                // check if the object is null or not
                 if (WeekDetails != null)
                 {
+                    // get the information
                     GameDateTextBox.Text = WeekDetails.GameDate.ToString("yyyy-MM-dd");
                     GameNameTextBox.Text = WeekDetails.GameName;
                     GameDescriptionTextBox.Text = WeekDetails.GameDescription;
@@ -50,11 +66,24 @@ namespace Comp2007_Assignment2_GameTracker
 
             }
         }
-
+        /**
+         * This method redirects the user to game list
+         * 
+         * 
+         * @method CAncelButton_click
+         * @return {void}
+         */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/GameDetails.aspx");
         }
+        /**
+        * This method check for the record whether it exists or not
+        * 
+        * 
+        * @method CheckNew()
+        * @return {void}
+        */
         protected bool CheckNew()
         {
             DateTime dt = Convert.ToDateTime(GameDateTextBox.Text);
@@ -77,6 +106,13 @@ namespace Comp2007_Assignment2_GameTracker
                     return false;
             }
         }
+        /**
+        * This method is called when the save button is clicked
+        * 
+        * 
+        * @method SaveButton_Click
+        * @return {void}
+        */
         protected void SaveButton_Click(object sender, EventArgs e)
         {
               using (DefaultConnection1 db = new DefaultConnection1())
@@ -90,6 +126,7 @@ namespace Comp2007_Assignment2_GameTracker
                                    where alldetails.Id == weekDetails
                                    select alldetails).FirstOrDefault();
                     }
+                    // saves the data if the user click save
                     details.GameDate = Convert.ToDateTime(GameDateTextBox.Text);
                     details.GameName = GameNameTextBox.Text;
                     details.GameDescription = GameDescriptionTextBox.Text;
@@ -107,17 +144,19 @@ namespace Comp2007_Assignment2_GameTracker
                     {
                         db.WeekDetails.Add(details);
                     }
+                    // saves the changes to database
                     db.SaveChanges();
-
+                    // redirects to the gamelist
                     Response.Redirect("~/GameDetails.aspx");
                 }
             
 
         }
-
+        // just to count the point for team 2
         protected void Team1TotalPointScoredTextBox_TextChanged(object sender, EventArgs e)
         {
             Team2TotalPointScoredTextBox.Text = Convert.ToString((Convert.ToInt32(TotalPointsTextBox.Text) - Convert.ToInt32(Team1TotalPointScoredTextBox.Text)));
         }
     }
 }
+ 

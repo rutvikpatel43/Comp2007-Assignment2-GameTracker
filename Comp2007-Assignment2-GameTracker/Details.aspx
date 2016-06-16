@@ -1,9 +1,15 @@
 ﻿<%@ Page Title="Week Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Details.aspx.cs" Inherits="Comp2007_Assignment2_GameTracker.Details" EnableEventValidation="false"%>
-
+<%--
+        Team : Rutvik(#200305366),Himanshu(#200306422)
+        File Name: Details.ascx
+        Description: form for entering all the information for game and also the form used for edit option
+        Website:http://comp2007-assignment2-gametracker.azurewebsites.net
+--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
             <div class="col-md-offset-4 col-md-4">
+                <%-- 3 division  for game and team details--%>
                 <asp:Label ID="CheckLabel" runat="server" CssClass="alert alert-danger btn-danger btn-lg" Visible="false" Width="100%"></asp:Label>
                 <h1>Week Details</h1>
                 <h5>All Fields are Required</h5>

@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GameDetails.aspx.cs" Inherits="Comp2007_Assignment2_GameTracker.GameDetails" %>
-
+<%--
+        Team : Rutvik(#200305366),Himanshu(#200306422)
+        File Name: GameDetails.aspx
+        Description: displays the information in grid view
+        Website:http://comp2007-assignment2-gametracker.azurewebsites.net
+--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">

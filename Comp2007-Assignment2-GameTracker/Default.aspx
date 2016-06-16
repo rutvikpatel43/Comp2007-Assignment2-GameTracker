@@ -6,11 +6,12 @@
         Website:http://comp2007-assignment2-gametracker.azurewebsites.net
 --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
+    <%-- Repeater to display all the information--%>
     <asp:Repeater runat="server" ID="JumboGameDetails">
 
-
+        
         <ItemTemplate runat="server">
+            <%-- Division to display  block of all information--%>
             <div class="HomePageGameDetails col-md-4">
                 <label for="GameNameLabel">Game Name:</label>
                 <asp:Label runat="server" ID="GameNameLabel" Text='<%#DataBinder.Eval(Container.DataItem, "GameName") %>' />
@@ -45,6 +46,5 @@
 
     </asp:Repeater>
 
-    <h1>Welcome!</h1>
 
 </asp:Content>

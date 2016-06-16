@@ -15,6 +15,7 @@ namespace Comp2007_Assignment2_GameTracker
         {
             if(!IsPostBack && Request.QueryString.Count>0)
             {
+                // sets all field to blank
                 TeamDescriptionText.Text = " ";
                 TeamName.Text = " ";
                 TeamPoints.Text = " ";
@@ -42,7 +43,6 @@ namespace Comp2007_Assignment2_GameTracker
                     TeamDescriptionText.Text = TeamDetails.Team1Description;
                     TeamPoints.Text = TeamDetails.Team1PointScored.ToString();
                 }
-                //TeamName.Text = temdetails;
             }
         }
     }

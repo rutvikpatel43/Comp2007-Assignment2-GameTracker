@@ -1,5 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Comp2007_Assignment2_GameTracker.Site" %>
-
+<%--
+        Team : Rutvik(#200305366),Himanshu(#200306422)
+        File Name: Site.Master
+        Description: it is the basic structure on which our app lays.
+        Website:http://comp2007-assignment2-gametracker.azurewebsites.net
+--%>
 <%@ Register Src="~/User_Controls/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
 <%@ Register Src="~/User_Controls/Footer.ascx" TagName="Footer" TagPrefix="bs4" %>
 <!DOCTYPE html>
