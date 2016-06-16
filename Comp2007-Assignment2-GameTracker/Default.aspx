@@ -6,7 +6,9 @@
         Website:http://comp2007-assignment2-gametracker.azurewebsites.net
 --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <%-- Repeater to display all the information--%>
+    <div class="container">
+        <div class="row">
+              <%-- Repeater to display all the information--%>
     <asp:Repeater runat="server" ID="JumboGameDetails">
 
         
@@ -47,4 +49,7 @@
     </asp:Repeater>
 
 
+        </div>
+    </div>
+  
 </asp:Content>
