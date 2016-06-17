@@ -130,9 +130,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Details.aspx" />
+    <Content Include="Users\Details.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="GameDetails.aspx" />
+    <Content Include="Users\GameDetails.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="logo.png" />
     <Content Include="Logout.aspx" />
@@ -186,7 +186,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="TeamDetails.aspx" />
+    <Content Include="Users\TeamDetails.aspx" />
     <Content Include="UserDetails.aspx" />
     <Content Include="Users.aspx" />
     <Content Include="User_Controls\Footer.ascx" />
@@ -215,18 +215,18 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Details.aspx.cs">
+    <Compile Include="Users\Details.aspx.cs">
       <DependentUpon>Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Details.aspx.designer.cs">
+    <Compile Include="Users\Details.aspx.designer.cs">
       <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GameDetails.aspx.cs">
+    <Compile Include="Users\GameDetails.aspx.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GameDetails.aspx.designer.cs">
+    <Compile Include="Users\GameDetails.aspx.designer.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
@@ -276,11 +276,11 @@
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="TeamDetails.aspx.cs">
+    <Compile Include="Users\TeamDetails.aspx.cs">
       <DependentUpon>TeamDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TeamDetails.aspx.designer.cs">
+    <Compile Include="Users\TeamDetails.aspx.designer.cs">
       <DependentUpon>TeamDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserDetails.aspx.cs">

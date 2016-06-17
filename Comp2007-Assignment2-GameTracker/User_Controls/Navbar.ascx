@@ -20,8 +20,14 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li id="Home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li id="Details" runat="server"><a href="Details.aspx"><i class="fa fa-wpforms fa-lg"></i> Add Game</a></li>
-               <li id="GameDetails" runat="server"><a href="GameDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Games</a></li>
+                <asp:PlaceHolder ID="PublicLinks" runat="server">
+                    <li id="Login" runat="server"><a href="Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+                    <li id="Register" runat="server"><a href="Register.aspx"><i class="fa fa-phone fa-lg"></i> Register</a></li>
+                </asp:PlaceHolder>
+                <asp:PlaceHolder ID="UserLinks" runat="server">
+                    <li id="Details" runat="server"><a href="Details.aspx"><i class="fa fa-wpforms fa-lg"></i> Add Game</a></li>
+                   <li id="GameDetails" runat="server"><a href="GameDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Games</a></li>
+                </asp:PlaceHolder>
                 <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
             </ul>
         </div>

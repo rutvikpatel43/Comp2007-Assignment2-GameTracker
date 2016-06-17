@@ -13,5 +13,10 @@ namespace Comp2007_Assignment2_GameTracker
         {
 
         }
+
+        protected void UsersGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
     }
 }
