@@ -32,7 +32,7 @@ namespace Comp2007_Assignment2_GameTracker
          */
         protected void get_weekDetails()
         {
-            using (DefaultConnection1 db = new DefaultConnection1())
+            using (GameConnection db = new GameConnection())
             {
                 string sortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
                 // query the Students Table using EF and LINQ
@@ -97,7 +97,7 @@ namespace Comp2007_Assignment2_GameTracker
         {
             int selectedrow = e.RowIndex;
             int gameId = Convert.ToInt32(GameDetailsGridView.DataKeys[selectedrow].Values["Id"]);
-            using (DefaultConnection1 db = new DefaultConnection1())
+            using (GameConnection db = new GameConnection())
             {
                 WeekDetail details = (from alldetails in db.WeekDetails
                                       where alldetails.Id == gameId

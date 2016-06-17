@@ -41,7 +41,7 @@ namespace Comp2007_Assignment2_GameTracker
         protected void Get_WeekDeatils()
         {
             int WeekDetailID = Convert.ToInt32(Request.QueryString["Id"]);
-            using (DefaultConnection1 db = new DefaultConnection1())
+            using (GameConnection db = new GameConnection())
             {
                 // gets inform from the database
                 WeekDetail WeekDetails = (from allDetails in db.WeekDetails
@@ -87,7 +87,7 @@ namespace Comp2007_Assignment2_GameTracker
         protected bool CheckNew()
         {
             DateTime dt = Convert.ToDateTime(GameDateTextBox.Text);
-            using (DefaultConnection1 db = new DefaultConnection1())
+            using (GameConnection db = new GameConnection())
             {
                 WeekDetail details = (from alldetails in db.WeekDetails
                                where alldetails.GameDate == dt
@@ -115,7 +115,7 @@ namespace Comp2007_Assignment2_GameTracker
         */
         protected void SaveButton_Click(object sender, EventArgs e)
         {
-              using (DefaultConnection1 db = new DefaultConnection1())
+              using (GameConnection db = new GameConnection())
                 {
                     WeekDetail details = new WeekDetail();
                     int weekDetails = 0;
@@ -140,6 +140,11 @@ namespace Comp2007_Assignment2_GameTracker
                     details.Team2Description = Team2DescriptionTextBox.Text;
                     details.Team2PointScored = Convert.ToInt32(Team2TotalPointScoredTextBox.Text);
                     details.Team2PointLoss = Convert.ToInt32(Team1TotalPointScoredTextBox.Text);
+                if (Convert.ToInt32(Team1TotalPointScoredTextBox.Text) > Convert.ToInt32(Team2TotalPointScoredTextBox.Text))
+                    details.WiningTeam = Team1NameTextbox.Text;
+                else
+                    details.WiningTeam = Team2NameTextBox.Text;
+                    details.UserID = 1;
                     if (weekDetails == 0 && !CheckNew())
                     {
                         db.WeekDetails.Add(details);

@@ -23,6 +23,8 @@
           <Property Name="Team2Description" Type="nvarchar(max)" Nullable="false" />
           <Property Name="Team2PointScored" Type="int" Nullable="false" />
           <Property Name="Team2PointLoss" Type="int" Nullable="false" />
+          <Property Name="WiningTeam" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
         </EntityType>
         <EntityContainer Name="ModelStoreContainer">
           <EntitySet Name="WeekDetails" EntityType="Self.WeekDetails" Schema="dbo" store:Type="Tables" />
@@ -50,6 +52,8 @@
           <Property Name="Team2Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Team2PointScored" Type="Int32" Nullable="false" />
           <Property Name="Team2PointLoss" Type="Int32" Nullable="false" />
+          <Property Name="WiningTeam" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityContainer Name="DefaultConnection1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="WeekDetails" EntityType="Self.WeekDetail" />
@@ -77,6 +81,8 @@
                 <ScalarProperty Name="Team2Description" ColumnName="Team2Description" />
                 <ScalarProperty Name="Team2PointScored" ColumnName="Team2PointScored" />
                 <ScalarProperty Name="Team2PointLoss" ColumnName="Team2PointLoss" />
+                <ScalarProperty Name="WiningTeam" ColumnName="WiningTeam" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

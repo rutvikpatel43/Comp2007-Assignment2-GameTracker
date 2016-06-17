@@ -26,7 +26,7 @@ namespace Comp2007_Assignment2_GameTracker
         }
         protected void GetGames()
         {
-            using (DefaultConnection1 db = new DefaultConnection1())
+            using (GameConnection db = new GameConnection())
             {
                 // make a variable to store all the record
                 var details = (from alldetails in db.WeekDetails

@@ -26,7 +26,7 @@ namespace Comp2007_Assignment2_GameTracker
         protected void get_TeamDetails()
         {
             int gameId = Convert.ToInt32(Request.QueryString["Id"]);
-            using (DefaultConnection1 db = new DefaultConnection1())
+            using (GameConnection db = new GameConnection())
             {
                 WeekDetail TeamDetails = (from details in db.WeekDetails
                                           where details.Id == gameId

@@ -32,6 +32,16 @@ body {
 	background-size: cover;
 
 }
+div.panel panel-primary
+{
+   color:#752099;
+    padding:18px;
+    border-spacing:30px;
+    border-style:groove;
+    border-radius:20px;
+    border-color:#F9BF3B;
+    background-color:lightgray;
+}
 div.HomePageGameDetails {
     margin-left:7%;
     margin-right:5%;

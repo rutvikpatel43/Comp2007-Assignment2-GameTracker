@@ -28,5 +28,7 @@ namespace Comp2007_Assignment2_GameTracker.Models
         public string Team2Description { get; set; }
         public int Team2PointScored { get; set; }
         public int Team2PointLoss { get; set; }
+        public string WiningTeam { get; set; }
+        public int UserID { get; set; }
     }
 }
