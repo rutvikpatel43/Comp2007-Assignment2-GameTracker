@@ -37,5 +37,15 @@ namespace Comp2007_Assignment2_GameTracker
 
             }
         }
+
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Calendar2_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

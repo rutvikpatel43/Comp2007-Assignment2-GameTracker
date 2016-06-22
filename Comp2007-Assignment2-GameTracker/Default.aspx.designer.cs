@@ -13,6 +13,15 @@ namespace Comp2007_Assignment2_GameTracker {
     public partial class Default {
         
         /// <summary>
+        /// Calendar1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        
+        /// <summary>
         /// JumboGameDetails control.
         /// </summary>
         /// <remarks>

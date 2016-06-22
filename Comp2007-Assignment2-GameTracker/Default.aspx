@@ -5,13 +5,17 @@
         Description: Landing page for our small web app
         Website:http://comp2007-assignment2-gametracker.azurewebsites.net
 --%>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    
     <div class="container">
         <div class="row">
+
+            <asp:Calendar ID = "Calendar1" runat = "server" SelectionMode="DayWeekMonth">
+</asp:Calendar>
+           
               <%-- Repeater to display all the information--%>
     <asp:Repeater runat="server" ID="JumboGameDetails">
-
-        
         <ItemTemplate runat="server">
             <%-- Division to display  block of all information--%>
             <div class="HomePageGameDetails col-md-4">
@@ -40,10 +44,7 @@
                 <label for="Team2PointLabel">Team Name:</label>
                 <asp:Label runat="server" ID="Team2PointLabel" Text='<%#DataBinder.Eval(Container.DataItem, "Team2PointScored") %>' />
                 <br />
-               
-
-
-            </div>
+   </div>
         </ItemTemplate>
 
     </asp:Repeater>

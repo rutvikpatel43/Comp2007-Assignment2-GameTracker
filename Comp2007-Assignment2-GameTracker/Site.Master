@@ -20,8 +20,10 @@
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <link href="Content/style.css" rel="stylesheet" />
     <link rel="favicon" href="Assets/Logo.png" />
+    <link href="Content/calendar-blue.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -36,6 +38,8 @@
     <script src="Scripts/jquery-2.2.3.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/app.js"></script>
+    <script src="Scripts/calendar-en.min.js"></script>
+    <script src="Scripts/jquery.dynDateTime.min.js"></script>
         <bs4:Footer runat="server"></bs4:Footer>
 </body>
 </html>

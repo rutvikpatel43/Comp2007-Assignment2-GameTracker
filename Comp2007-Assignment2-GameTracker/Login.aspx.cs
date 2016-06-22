@@ -40,7 +40,7 @@ namespace Comp2007_Assignment2_GameTracker
                 authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, userIdentity);
 
                 // Redirect to Main Menu
-                Response.Redirect("~/GameDetails.aspx");
+                Response.Redirect("~/Users/GameDetails.aspx");
             }
             else
             {

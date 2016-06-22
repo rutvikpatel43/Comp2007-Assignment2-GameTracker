@@ -25,8 +25,13 @@
                     <li id="Register" runat="server"><a href="Register.aspx"><i class="fa fa-phone fa-lg"></i> Register</a></li>
                 </asp:PlaceHolder>
                 <asp:PlaceHolder ID="UserLinks" runat="server">
-                    <li id="Details" runat="server"><a href="Details.aspx"><i class="fa fa-wpforms fa-lg"></i> Add Game</a></li>
-                   <li id="GameDetails" runat="server"><a href="GameDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Games</a></li>
+                    <li id="Details" runat="server"><a href="~/Users/Details.aspx"><i class="fa fa-wpforms fa-lg"></i> Add Game</a></li>
+                   <li id="GameDetails" runat="server"><a href="~/Users/GameDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Games</a></li>
+                </asp:PlaceHolder>
+                 <asp:PlaceHolder ID="Admin" runat="server">
+                    <li id="Users" runat="server"><a href="~/Admin/Users.aspx"><i class="fa fa-wpforms fa-lg"></i> Users</a></li>
+                   <li id="UserDetails" runat="server"><a href="~/Admin/UserDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Add User</a></li>
+                     <li id="GameLists" runat="server"><a href="~/Users/GameDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Games</a></li>
                 </asp:PlaceHolder>
                 <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
             </ul>

@@ -32,18 +32,25 @@ namespace Comp2007_Assignment2_GameTracker
                     PublicLinks.Visible = false;
                     UserLinks.Visible = true;
                     // show admin option if login as admin
-                    if (HttpContext.Current.User.Identity.GetUserName() == "admin")
+                    if (HttpContext.Current.User.Identity.GetUserName() == "Admin")
+                    {
+                        Admin.Visible = true;
+                        UserLinks.Visible = true;
+                    }
+                    else if (HttpContext.Current.User.Identity.GetUserName() == "Users")
                     {
                         UserLinks.Visible = true;
+                        Admin.Visible = false;
                     }
                 }
                 else
                 {
                     // only show login and register
                     UserLinks.Visible = false;
+                    Admin.Visible = false;
                     PublicLinks.Visible = true;
                     //afterward change to admin
-                    UserLinks.Visible = false;
+                  
                 }
             }
         }
