@@ -27,11 +27,12 @@
                 <asp:PlaceHolder ID="UserLinks" runat="server">
                     <li id="Details" runat="server"><a href="~/Users/Details.aspx"><i class="fa fa-wpforms fa-lg"></i> Add Game</a></li>
                    <li id="GameDetails" runat="server"><a href="~/Users/GameDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Games</a></li>
+                    <li id="Logout1" runat="server"><a href="~/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
                 </asp:PlaceHolder>
                  <asp:PlaceHolder ID="Admin" runat="server">
-                    <li id="Users" runat="server"><a href="~/Admin/Users.aspx"><i class="fa fa-wpforms fa-lg"></i> Users</a></li>
-                   <li id="UserDetails" runat="server"><a href="~/Admin/UserDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Add User</a></li>
-                     <li id="GameLists" runat="server"><a href="~/Users/GameDetails.aspx"><i class="fa fa-th-list fa-lg"></i> Games</a></li>
+                    <li id="Users" runat="server"><a href="~/Admin/Users.aspx"><i class="fa fa-list fa-lg"></i> Users</a></li>
+                   <li id="UserDetails" runat="server"><a href="~/Admin/UserDetails.aspx"><i class="fa fa-plus-circle fa-lg"></i> Add User</a></li>
+                     <li id="Logout" runat="server"><a href="~/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
                 </asp:PlaceHolder>
                 <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
             </ul>

@@ -34,10 +34,11 @@ namespace Comp2007_Assignment2_GameTracker
                     // show admin option if login as admin
                     if (HttpContext.Current.User.Identity.GetUserName() == "Admin")
                     {
+                        Logout1.Visible = false;
                         Admin.Visible = true;
                         UserLinks.Visible = true;
                     }
-                    else if (HttpContext.Current.User.Identity.GetUserName() == "Users")
+                    else if (HttpContext.Current.User.Identity.GetUserName() != "Admin")
                     {
                         UserLinks.Visible = true;
                         Admin.Visible = false;
@@ -83,6 +84,12 @@ namespace Comp2007_Assignment2_GameTracker
                     break;
                 case "Register":
                     Register.Attributes.Add("class", "link-active");
+                    break;
+                case "Users":
+                    Users.Attributes.Add("class", "link-active");
+                    break;
+                case "UserDetails":
+                    UserDetails.Attributes.Add("class", "link-active");
                     break;
             }
         }

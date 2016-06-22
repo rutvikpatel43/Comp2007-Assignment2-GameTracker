@@ -76,6 +76,15 @@ namespace Comp2007_Assignment2_GameTracker {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl GameDetails;
         
         /// <summary>
+        /// Logout1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Logout1;
+        
+        /// <summary>
         /// Admin control.
         /// </summary>
         /// <remarks>
@@ -103,13 +112,13 @@ namespace Comp2007_Assignment2_GameTracker {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl UserDetails;
         
         /// <summary>
-        /// GameLists control.
+        /// Logout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl GameLists;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Logout;
         
         /// <summary>
         /// contact control.
