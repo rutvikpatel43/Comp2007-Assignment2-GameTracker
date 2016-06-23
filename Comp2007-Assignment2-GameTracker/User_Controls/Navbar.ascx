@@ -19,7 +19,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li id="Home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                <li id="Home" runat="server"><a href="../Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
                 <asp:PlaceHolder ID="PublicLinks" runat="server">
                     <li id="Login" runat="server"><a href="Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
                     <li id="Register" runat="server"><a href="Register.aspx"><i class="fa fa-plus-circle fa-lg"></i> Register</a></li>
